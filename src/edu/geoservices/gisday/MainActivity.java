@@ -5,6 +5,7 @@ import android.annotation.TargetApi;
 import android.app.Activity;
 import android.app.ActionBar;
 import android.app.AlertDialog;
+import android.app.MediaRouteButton;
 import android.os.Bundle;
 import android.os.Bundle;
 import android.content.Context;
@@ -34,24 +35,24 @@ import android.widget.TextView;
 
 public class MainActivity extends Activity {
 	
+
+
+	public static boolean userAuthenticated; 
+
 	
-    public static boolean userAuthenticated; 
-    
-	int menu_layout;
 	
-    	
-    	
+    	@Override
     	public boolean  onCreateOptionsMenu(Menu menu) 
     	{
-    		if (userAuthenticated) 
-    		{			menu_layout = R.id.loggedin_user; 
-    		getMenuInflater().inflate(menu_layout, menu); 
-    		}
+    		if (LoginActivity.authenticateUser()) 
+	    		{	
+	    		getMenuInflater().inflate(R.menu.bar_menu2, menu); 
+	    		return true; }
     		else 	
-    						menu_layout = R.id.non_user; }
-    			getMenuInflater().inflate(menu_layout, menu);
-		        return true; 
-		};
+    			 { 
+    			 getMenuInflater().inflate(R.menu.bar_menu1, menu);
+		        return true; }
+		}
 		      
 
 
@@ -109,9 +110,9 @@ public class MainActivity extends Activity {
 		 super.onCreate(savedInstanceState);
 	        setContentView(R.layout.main);
 	        final Button eventButton = (Button) findViewById(R.id.event_b); // Get a handle to the button so we can add a handler for the click event
-	        final ImageButton menuB = (ImageButton) findViewById(R.id.main_menub);
+	        final ImageButton menuButton = (ImageButton) findViewById(R.id.main_menub);
 	        
-
+	       
 	        
 	        
 	 eventButton.setOnClickListener(new View.OnClickListener() {
@@ -119,10 +120,13 @@ public class MainActivity extends Activity {
 		 	public void onClick(View v) {
 		 		Intent calender = new Intent(MainActivity.this, CalenderActivity.class);
 		 		startActivity(calender);	}
-	 		});    
+	 }) ;
 	 
-	
 	 }
+	
+		 
+		 
+	
 		    @SuppressWarnings("deprecation")
 		    public AlertDialog createAlertDialog(String msg, String buttonText) {
 		        AlertDialog.Builder dialogBuilder = new AlertDialog.Builder(this);
