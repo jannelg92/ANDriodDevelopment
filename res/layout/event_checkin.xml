@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="#E1DED9"
+    tools:context=".MainActivity$Event_checkinActivity.java"  >
+
+     <ImageButton
+         android:id="@+id/return_b"
+         android:layout_width="70dp"
+         android:layout_height="70dp"
+         android:clickable="true"
+         android:layout_alignParentLeft="true"
+         android:layout_alignParentTop="true"
+         android:contentDescription="@string/title_section1"
+         android:scaleType="fitCenter"
+         android:src="@drawable/geoservices_button" />
+
+     <TextView
+         android:id="@+id/checkin"
+         android:layout_width="188dp"
+         android:layout_height="wrap_content"
+         android:layout_alignParentRight="true"
+         android:layout_alignParentTop="true"
+         android:layout_marginTop="15dp"
+         android:text="Event Check-in"
+         android:textColor="#500000"
+         android:textSize="@dimen/big_text" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="fill_parent"
+        android:layout_height="7dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/return_b"
+        android:background="#500000"
+        android:paddingBottom="2dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="2dp"
+        android:scaleType="fitXY"
+        android:src="@android:drawable/divider_horizontal_dark" />
+
+</RelativeLayout>

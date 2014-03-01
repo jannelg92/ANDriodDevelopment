@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Texas A&amp;M GISday</string>
+    <string name="action_settings">Account Settings</string>
+    <string name="title_menu">Menu</string>
+    <string name="title_menu1">Login</string>
+    <string name="title_menu2">Event Calendar</string>
+    <string name="title_menu3">Share</string>
+    <string name="title_menu4">Map</string>
+    <string name="title_menu11">Logout</string>
+    <string name="title_menu14">Event Checkin</string>
+    <string name="title_menu15">My Events</string>
+    <string name="title_menu16">Settings</string>
+    <string name="title_section">Home</string>
+    <string name="title_section1">Back  </string>
+    <string name="title_section2">Events  </string>
+    <string name="title_section3">Classes  </string>
+    <string name="title_section4">Professors  </string>
+    <string name="title_section5">Pictures  </string>
+    <string name="title_section6">Sign-up  </string>
+    <string name="title_section7">  </string>
+    <string name="title_section8">  </string>
+
+</resources>

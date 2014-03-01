@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/aggieland_gis"
+    android:gravity="top"
+    tools:context=".MainActivity" >
+
+		<ImageButton
+		    android:id="@+id/main_menub"
+		    android:layout_width="45sp"
+		    android:layout_height="45sp"
+		    android:layout_alignParentLeft="true"
+		    android:layout_margin="10sp"
+		    android:layout_alignParentTop="true"
+		    android:background="@drawable/menu_b"
+		    android:contentDescription="@string/title_menu"
+		    android:clickable="true"
+		    android:scaleType="centerCrop"
+		    android:src="@drawable/menu_b" />
+
+		<Button
+		    android:id="@+id/event_b"
+		    android:layout_width="225dp"
+		    android:layout_height="50dp"
+		    android:layout_centerHorizontal="true"
+		    android:layout_alignParentBottom="true"
+		    android:background="#E8E5DF"
+		    android:clickable="true"
+		    android:text="@string/title_section2"
+		    android:textColor="#500000"
+		    android:textSize="@dimen/small_text" />
+
+	</RelativeLayout>

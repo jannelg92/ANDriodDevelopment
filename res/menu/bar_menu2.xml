@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:id="@+id/loggedin_user">
+    
+    <item 
+        android:id="@+id/menu2_99"  
+        android:orderInCategory="99"  android:contentDescription="Log out"
+        android:showAsAction="never"  android:title="@string/title_menu11" />
+    
+    <item 
+        android:id="@+id/menu2_100"  
+        android:orderInCategory="100"  android:contentDescription="Event Calendar"
+        android:showAsAction="never" android:title="@string/title_menu2" />
+    <item 
+        android:id="@+id/menu2_101"  
+        android:orderInCategory="101"  android:contentDescription="Event Check - in"
+        android:showAsAction="never" android:title="@string/title_menu14" />
+    
+    <item 
+        android:id="@+id/menu2_102"  
+        android:orderInCategory="102"  android:contentDescription="My Events" 
+        android:showAsAction="never" android:title="@string/title_menu15" />
+    
+    <item 
+        android:id="@+id/menu2_103"  
+        android:orderInCategory="103"  android:contentDescription="Settings" 
+        android:showAsAction="never" android:title="@string/title_menu16" />
+    
+    <item 
+        android:id="@+id/menu2_104"  
+        android:orderInCategory="104"  android:contentDescription="Share" 
+        android:showAsAction="never" android:title="@string/title_menu3" />
+    
+
+</menu>
